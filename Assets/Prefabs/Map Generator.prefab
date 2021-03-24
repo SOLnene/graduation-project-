@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7258225146064657886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7258225146064657884}
+  - component: {fileID: 7258225146064657885}
+  - component: {fileID: 7258225146064657875}
+  m_Layer: 0
+  m_Name: Map Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7258225146064657884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258225146064657886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7258225146064657885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258225146064657886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef48dbbad3db3a84c829fae45e3175cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawmode: 2
+  terrainData: {fileID: 11400000, guid: d4e906a3a71d0f349baf840f82b601ba, type: 2}
+  noiseData: {fileID: 11400000, guid: 55a061b3eaac41e4fa3a22adf512147e, type: 2}
+  textureData: {fileID: 11400000, guid: e35482f3c32a33e44b864c50cdd837b5, type: 2}
+  terrainMaterial: {fileID: 2100000, guid: b9dac54d5cfe1e84c988d89e9f22d7f3, type: 2}
+  levelOfDetail: 0
+  autoUpdate: 1
+  regions:
+  - name: water
+    height: 0.2
+    colour: {r: 0, g: 0.04445076, b: 1, a: 0}
+  - name: sand
+    height: 0.3
+    colour: {r: 0.9150943, g: 0.73292315, b: 0, a: 0}
+  - name: land1
+    height: 0.4
+    colour: {r: 0.086240634, g: 0.9622642, b: 0.10685305, a: 0}
+  - name: land2
+    height: 0.6
+    colour: {r: 0, g: 0.6603774, b: 0.085581474, a: 0}
+  - name: moutain
+    height: 0.8
+    colour: {r: 0.49056602, g: 0.48804083, b: 0.48362404, a: 0}
+  - name: snow
+    height: 1
+    colour: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &7258225146064657875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258225146064657886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6d2bd3e98eee346bfbc0176a296bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureRender: {fileID: 0}
+  meshFilter: {fileID: 0}
+  meshRenderer: {fileID: 0}
+  meshCollider: {fileID: 0}
